@@ -13,6 +13,10 @@
 
 I only make use of the fine masks for training the segmentation model i.e 403 datapoints/images. In the future I will make use of all the 3k masks and images for training. The validation, and training datapoint counts have been mentioned above. 
 
+**SegNext Model Diagram:**
+
+![Model](https://github.com/gremlin97/Turion/blob/main/Images/SegNext.png)
+
 **SegNext Model Structure:**
 
 ```
@@ -127,7 +131,11 @@ class SegNext(nn.Module):
     return x
 ```
 
-**Vannila Segnet Structure:**
+## Uncertainity in Segmentation using GradCAM
+I make use of segmentation uncertainity by using GradCAM. The class activation maps are created per pixel for a particular class.
+![GradCAM](https://github.com/gremlin97/Turion/blob/main/Images/gradcam.png)
+
+**Vanilla Segnet Structure:**
 
 ```
 class SegNext(nn.Module):
