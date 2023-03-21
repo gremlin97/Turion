@@ -1,6 +1,6 @@
-# Turion
+## Goal
 
-* The Project repo consists of two Python Notebooks (IPYNB files), Segnet and SegNext implementing the Vanilla Segnet and an improved version of Segnet (SegNext) making use of the sailent features of UNet  (Inspired from). We make use of the 
+* The Project repo consists of two Python Notebooks (IPYNB files), Segnet and SegNext implementing the Vanilla Segnet and an improved version of Segnet (SegNext) making use of the sailent features of UNet  (Inspired from). We make use of the Spacecraft dataset for segmentation of spacecraft parts.
 
 ## SegNext
 ***Model:*** I create an updated and advanced version of SegNet inspired by UNet. We have seen that segnet is composed of an encoder-decoder architecture. Here we apply successive enoder layers, with filters ranging from *32,64,128 and 256* for each block. The model architecures has double convolutions followed by **BN-ReLU** (inspired by VGG16). For the decoder we applied normal convolution filters and upsample the images by using Max Unpooling. To apply this operation we make use the pooling indices after pooling and initial image sizes before pooling.
