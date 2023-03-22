@@ -133,6 +133,7 @@ class SegNext(nn.Module):
 
 ## Uncertainity in Segmentation using GradCAM
 I make use of segmentation uncertainity by using GradCAM. The class activation maps are created per pixel for a particular class.
+
 ![GradCAM](https://github.com/gremlin97/Turion/blob/main/Images/gradcam.png)
 
 **Vanilla Segnet Structure:**
