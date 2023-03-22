@@ -245,3 +245,10 @@ class SegNext(nn.Module):
 
 ```
 
+## Limitations and Future Work
+
+* Implement and use Dice Loss instead of catergorical cross entropy loss.
+* Make use IoU Metric to find the accuracy of the segmentation mask rather than using pixel-to-pixel accuracy.
+* Use an appropriate folder structure, sepeating model, utility and main/training files (This has been done by me before:https://github.com/gremlin97/EVA-Utils).
+* Make use of a pretrained-backbone encoder head for improved performance.
+* Improve the model performance and make it SOTA.
